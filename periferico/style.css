@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+h1{
+    color: black;
+    background-color: aliceblue;
+
+
+}
+
+div > p {
+    display: none;
+}
+
+div:hover >p {
+    display: block;
+    background-color: brown;
+}

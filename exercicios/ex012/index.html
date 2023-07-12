@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="fotopessoal800.png" type="boné.png">
+    <title>Videos HTML 5</title>
+</head>
+<body>
+    <h1>Inserindo Videos Hospedados Localmente</h1>
+    
+    <strong><p>Este video está hospedado no próprio servidor - <mark>consomem dados do cliente</p></strong></mark>
+   
+    <!-- de forma simples:
+
+        <video src="midias/Meu Video Rocket2.mp4" width="500" controls ></video>
+
+        ou de uma forma mais completa e adequada:
+    -->
+
+    <video width="560"  poster="imagens/rocket4.jpg"controls loop>
+        <source src="midias/meu-video-rocket.ogv" type="video/ogv">
+        <source src="midias/Meu Video Rocket (2).mp4" type="video/mp4">
+        <source src="midias/Meu Video Rocket.webm" type="video/webm">
+        <p>seu navegador não tem compatibilidade co reprodução de video!</p>
+
+
+    </video>
+
+    <h1>Inserindo Videos do YouTube&reg;</h1>
+    <strong><p>Este video está hospedado em um servidor externo - <mark>Não consomem dados do cliente</p></strong></mark>
+ 
+    <iframe width="560" height="390" src="https://www.youtube.com/embed/OnoNITE-CLc?start=10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; we     b-share" allowfullscreen></iframe>
+    
+    <h1>Inserindo Videos do Vimeo&reg;</h1>
+    <strong><p>Este video está hospedado em um servidor externo - <mark>Não consomem dados do cliente</p></strong></mark>
+    
+    <iframe src="https://player.vimeo.com/video/334586264?h=974387d2e7&title=0&byline=0&portrait=0" width="560" height="390" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+
+
+</body>
+</html>

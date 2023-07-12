@@ -1,0 +1,24 @@
+@charset "utp-08"
+
+body {
+    background-color:#ffe53bd8;
+    font font-family: arial, helvetica, sans-serif;
+    font-size: 20px;
+
+   }
+
+   h1 {
+    color: darkblue;
+    background-color: lightblue;
+
+   }
+
+   h2 {
+    color: darkred;
+
+   }
+
+   p {
+    text-align: justify;
+   }
+
