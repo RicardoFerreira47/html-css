@@ -12,12 +12,24 @@
             background-position: center center;
             background-repeat: repeat;
             background-size: cover;
+            background-attachment: fixed;
+
+
+
+            /*
+           Shorthand - Background 
+            color -> image -> position -> repet -> [size]* -> attachment
+            background: black url(imagens/wallpaper002.jpg) center center repeat fixed;
+            background-size: cover;
+            * nota-se que até o momento (July/23), os navegadores não identificavam na shorthand o "Size", portanto necessario fazelo fora dela. como supracitado!!!*/
+
+
 
         }
         main{
             background-color: white;
             padding: 10px;
-            width: 400px;
+            max-width: 400px;
             margin: auto;
             border: 1px solid blue;
             border-radius: 15px;
