@@ -1,5 +1,14 @@
 @charset "utf-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lato:ital,wght@0,900;1,900&family=Mulish:wght@200;900&family=Open+Sans:wght@600&family=Oswald:wght@500&family=Pangolin&family=Work+Sans:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap');
+
+@font-face {
+    font-family:'comic';
+    src: url(' ../fontes/comic-sans-ms-bold-2.ttf') format('truetype');
+    
+}
+
+
 *{
     margin: 0px;
     padding: 0px;
@@ -25,6 +34,10 @@ header>h1{
     padding-top: 50px;
     /* or text-transform: ;*/
     font-variant: small-caps;
+    font-family: 'lato';
+    font-size: 3em;
+    
+
 
 }
 
@@ -50,6 +63,8 @@ a:hover /* or header a:hover, footer a:hover */ {
 
 
 section{ 
+    font-family: 'comic';
+    font-size: 1.2em;
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
