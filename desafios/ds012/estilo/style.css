@@ -5,7 +5,7 @@
 @font-face {
     font-family:'comic';
     src: url(' ../fontes/comic-sans-ms-bold-2.ttf') format('truetype');
-    
+
 }
 
 
@@ -31,10 +31,9 @@ header{
 
 
 header>h1{
-    padding-top: 50px;
-    /* or text-transform: ;*/
-    font-variant: small-caps;
     font-family: 'lato';
+    padding-top: 50px; /* or text-transform: ;*/
+    font-variant: small-caps;
     font-size: 3em;
     
 
@@ -48,7 +47,7 @@ header>p{
 }   
 
 
-a /*or header a, footer a */ { 
+a /*or "header a, footer a" */ { 
     color: white;
     text-decoration: none;
     font-weight: bolder;
@@ -56,7 +55,7 @@ a /*or header a, footer a */ {
 }
 
 
-a:hover /* or header a:hover, footer a:hover */ {
+a:hover /* or "header a:hover, footer a:hover" */ {
     text-decoration: underline;
     
 }
