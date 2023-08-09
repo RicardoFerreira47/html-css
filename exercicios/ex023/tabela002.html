@@ -37,12 +37,42 @@
             
 
         }
+        caption{
+            font-size: 1.3em;
+            font-weight: bolder;
+            line-height: 2em;
+            
+            
+        }
 
         thead, tfoot{
             background-color: rgb(204, 255, 0);
             color: rgb(32, 22, 165);
 
         }
+
+        tbody>tr:nth-child(odd){
+            background-color: rgb(159, 156, 156);
+
+        }
+
+        tbody>tr:nth-child(even){
+            background-color: white;
+        
+        }
+        /* 
+        
+        ou Podemos fazer de outra forma:
+
+        =========================================
+        tbody> tr:nth-child(2n){
+            background-color: rgb(159, 156, 156);
+        } 
+        =========================================
+        obs: pode ser qtos n(intervalo de linhas) eu quiser (2n,3n,4n....)
+        
+        nesse caso a cada duas linhas ele vaee colocar a cor que eu definir, como minha planilha é branca vaee ficar com o mesmo efeito zebrado
+        */
 
         th, td{
             border: 1px solid black;
@@ -54,6 +84,13 @@
             text-align: right;
         }
 
+        #total{
+            background-color: rgb(239, 56, 56);
+            color: white;
+            font-weight:900;
+
+        }
+
 
     </style>
 </head>
@@ -61,10 +98,11 @@
     <h1>Usando Tabelas Grandes</h1>
     <img src="imagens/brasil.jpg" alt="brasil">
     <table>
+        <caption>População das 15 principais unidades Federativas (IBGE 2023)</caption>
         <thead>
             <tr>
-                <th>Federação</th>
-                <th>População</th>
+                <th scope="col">Federação</th>
+                <th scope="col" style="width: 130px;">População</th>
 
             </tr>
 
@@ -156,8 +194,8 @@
 
         <tfoot>
             <tr>
-                <th>População Total</th>
-                <td class="num"><strong>203 062 512</strong></td>
+                <th scope="row">População Total</th>
+                <td class="num" id="total">203 062 512</td>
             </tr>
 
         </tfoot>
