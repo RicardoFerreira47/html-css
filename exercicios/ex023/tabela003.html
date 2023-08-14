@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5em;
+        margin-left: 30px;
+        
+        
+    }
+    body>h1{
+        text-decoration: underline;
+        margin-left: 40px;
+
+       
+        
+    }
+
+    table{
+        width: 600px;
+        height: 1200px;
+        border-collapse: collapse;
+        text-align: center;
+        position: relative;
+        
+        
+    }
+
+    
+     thead{
+        background-color: rgb(119, 90, 52);
+        color: #fff;
+        
+     }
+
+     thead>tr>th{
+
+        position: sticky;
+        top: 0;
+        background-color:rgb(119, 90, 52); 
+        padding: 15px;
+        
+     }
+
+
+
+    td,th{
+        border: 1px solid black;
+        padding:0 15px;
+        font-size: 1.5em;
+        
+    }
+
+    tbody>tr:nth-child(odd){
+        background-color: aquamarine;
+    }
+
+
+
+
+
+</style>
+
+</head>
+<body>
+    <h1>Mesclagem de Células</h1>
+
+    <table>
+        
+        <thead>
+            <tr>
+                <th colspan="3">Cabeçalho</th>
+            </tr>
+        </thead>
+            
+        <tbody>
+            </tr>
+            <tr>
+                <td>a</td>
+                <td>b</td>
+                <td>c</td>
+            </tr>
+            <tr>
+                <td rowspan="3">d</td>
+                <td>e</td>
+                <td>f</td>
+            </tr>
+            <tr>
+                <!-- <td>g</td> -->
+                <td>h</td>
+                <td rowspan="2">i</td>
+            </tr>
+            <tr>
+                <!-- <td>j</td> -->
+                <td>k</td>
+                <!-- <td>l</td> -->
+            </tr>
+
+            <tr>
+                <td>m</td>
+                <td>n</td>
+                <td rowspan="3">o</td>
+            </tr>
+
+            <tr>
+                <td>p</td>
+                <td>q</td>
+               <!-- <td>r</td> --> 
+            </tr>
+
+            <tr>
+                <td>s</td>
+                <td>t</td>
+                <!-- <td>u</td> -->
+            </tr>
+
+            <tr>
+                <td>v</td>
+                <td>w</td>
+                <td >x</td>
+            </tr>
+
+            <tr>
+                <td>y</td>
+                <td colspan="2">z</td>
+                
+            </tr>
+        </tbody>
+
+
+    </table>
+    
+</body>
+</html>
