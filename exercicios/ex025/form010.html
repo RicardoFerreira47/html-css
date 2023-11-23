@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Teste de Formulários</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="inas">Ano de Nascimeto: </label>
+            <input type="number" name="nas" id="inas" min="1910" oninput="calcidade()" placeholder="somente ano">
+
+        </p>
+
+        <p>
+            <label for="iida">Sua idade é: </label>
+            <output id="iida">0</output>
+        </p>
+
+
+
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+    <script>
+        function calcidade() {
+            let atual = new Date().getFullYear()
+            iida.innerHTML = Number(atual) - Number(inas.value)
+        }
+    </script>
+    
+</body>
+</html>

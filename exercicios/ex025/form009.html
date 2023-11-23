@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Teste de Formulários</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <label for="inota"> Nota de Satisfação: </label>
+        <input type="range" name="Nota" id="inota" required min="0" max="10" value="5" oninput="ival.innerHTML = Number(inota.value)" >
+        <output id="ival">5</output>
+
+
+
+
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+
+
+    </form>
+    
+</body>
+</html>
