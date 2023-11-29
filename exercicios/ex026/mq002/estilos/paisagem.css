@@ -5,5 +5,9 @@
 body{
     background-image: url(../imagens/cev-landscape.jpg);
     background-size: contain;
-    background-position: left bottom;
+    background-position: center bottom;
+}
+h1{
+    text-align: center;
+   
 }
